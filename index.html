@@ -1,50 +1,197 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="assets/style.css"/>
+		<!-- favicon -->
+		<title>Musée océanographique de Baden-Baden</title>
+		<link rel="icon" href="assets/img/favicon.ico"> 
+		<!-- normalize -->
+		<link rel="stylesheet" href="assets/css//normalize.css">
+		<!-- style css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<!-- slider -->
+		<link rel="stylesheet" href="assets/css/slider.css">
+		<!-- font-awesome -->
 		<meta charset="utf-8"/>
+		<meta name="description" content="site du musée océanographique de Baden-Baden, protection océans, les actus, la boutique et ">
 	</head>
 	<body>
 	    <header>
-			ici le logo
+			<img src="assets/css/img/icon.ico" alt="icon">
 	    	<nav>
-	    		ici le menu
+	    		<ul class="menu_main">
+	    			<li class="li_parent_menu_second">
+	    				<a href="#">le musée</a>
+	    				<ul class="menu_second">
+	    					<li><a href="#">infos</a></li>
+	    					<li><a href="#">histoire</a></li>
+	    					<li><a href="#">etc</a></li>
+	    				</ul>
+	    			</li>
+	    			<li class="li_parent_menu_second">
+	    				<a href="#">aquariums</a>
+	    				<ul class="menu_second">
+	    					<li><a href="#">description</a></li>
+	    					<li><a href="#">especes</a></li>
+	    					<li><a href="#">etc</a></li>
+	    				</ul>
+	    			</li>
+	    			<li class="li_parent_menu_second">
+	    				<a href="#">animations</a>
+	    				<ul class="menu_second">
+	    					<li><a href="#">piscine</a></li>
+	    					<li><a href="#">nager avec requins</a></li>
+	    					<li><a href="#">etc</a></li>
+	    				</ul>
+	    			</li>
+	    			<li>
+	    				<a href="#">actualités</a>
+	    			</li>
+	    			<li class="li_parent_menu_second">
+	    				<a href="#">préparez votre visite</a>
+	    				<ul class="menu_second">
+	    					<li><a href="#">accès</a></li>
+	    					<li><a href="#">horaires</a></li>
+	    					<li><a href="#">tarifs</a></li>
+	    					<li><a href="#">restaurant</a></li>
+	    					<li><a href="#">boutique</a></li>
+	    				</ul>
+	    			</li>
+	    			<li>
+	    				<a href="#">contact</a>
+	    			</li>
+	    		</ul>
 	    	</nav>
-	    	ici le slide
 	    </header>
-	    <main>
-	    	<section>
+	    <main> 
+	    <!-- slideshow full css ! -->
+			<span id="sl_play" class="sl_command"></span>
+			<span id="sl_pause" class="sl_command"></span>
+			 
+			<span id="sl_i1" class="sl_command sl_i"></span>
+			<span id="sl_i2" class="sl_command sl_i"></span>
+			<span id="sl_i3" class="sl_command sl_i"></span>
+			<span id="sl_i4" class="sl_command sl_i"></span>
+			<section class="slideshow">
+				<a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+				<a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+				<div class="container">
+					<div class="c_slider"></div>
+					<div class="slider">
+						<figure>
+							<img src="img/dummy-640x310-1.jpg" alt="" width="640" height="310" />
+							<figcaption>The mirror of soul</figcaption>
+						</figure>
+
+						<figure>
+							<img src="img/dummy-640x310-2.jpg" alt="" width="640" height="310" />
+							<figcaption>Let's cross that bridge when we come to it</figcaption>
+						</figure>
+
+						<figure>
+							<img src="img/dummy-640x310-3.jpg" alt="" width="640" height="310" />
+							<figcaption>Sushi<em>(do)</em> time</figcaption>
+						</figure>
+
+						<figure>
+							<img src="img/dummy-640x310-4.jpg" alt="" width="640" height="310" />
+							<figcaption>Waking Life</figcaption>
+						</figure>
+					</div>
+				</div>
+					
+				<span id="timeline"></span>
+			</section>
+
+	    	<section class="section_intro">
 	    		<h1>Bienvenue au Musée Océanographique de Baden-Baden</h1>
 	    		<article>
-	    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie risus at tincidunt malesuada. Suspendisse eu erat cursus,</p>
-	    			<p>e faucibus. Nam sed leo mi. Sed quis orci pulvinar, posuere elit at, tempus massa. Vivamu</p>
+	    			<p>
+	    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie risus at tincidunt malesuada. Suspendisse eu erat cursus,
+	    			</p>
+	    			<p>
+	    				e faucibus. Nam sed leo mi. Sed quis orci pulvinar, posuere elit at, tempus massa. Vivamu
+	    			</p>
 	    		</article>
 	    	</section>
-	    	<section>
-				<article></article>
-				<article></article>
-				<article></article>
+	    	<section classs="section_info">
+	    		<article>
+	    			<img src="" alt="logo visite">
+	    			<h3>préparez votre visite</h3>
+	    			<p>
+	    				a maximus vehicula. Nam mauris odio, sollicitudin sit amet risus vitae, interdum bibendum leo. Nam ex urna, porta in pharetra in, bibendum et felis. Etiam faucibus lectus at eros t
+	    			</p>
+	    		</article>
+	    		<article>
+	    			<img src="" alt="logo en ce moment">
+	    			<h3>en ce moment</h3>
+	    			<p>
+	    				itur tincidunt porta urna venenatis imperdiet. Donec interdum dui et neque molestie tempus. Donec mollis, odio 
+	    			</p>
+	    		</article>
+	    		<article>
+	    			<img src="" alt="logo billeterie">
+	    			<h3>billeterie</h3>
+	    			<p>
+	    				es quam massa tincidunt erat. Aliquam ut lobortis sem. Fusce non nunc sit amet purus fermentum accu
+	    			</p>
+	    		</article>
 	    	</section>
-	    	<section>
-	    			<h2>nos actualités</h2>
-	    			<article>
-	    				<picture></picture>
-	    				<p></p>
-	    				<picture></picture>
-	    				<p></p>
-	    				<picture></picture>
-	    				<p></p>
-	    				<picture></picture>
-	    				<p></p>
-	    			</article>
+	    	<section class="section_actu">
+	    		<h2>nos actualités</h2>
+	    		<article>
+	    			<picture></picture>
+	    			<h4>projet océanides</h4>
+	    			<p>12 <img src="" alt=""></p>
+	    			<p>3 novembre 2015</p>
+	    		</article>
+	    		<article>
+	    			<picture></picture>
+	    			<h4>lancement de l'expo "la grande barrière de corail"</h4>
+	    			<p>12 <img src="" alt=""></p>
+	    			<p>28 octobre 2015</p>
+	    		</article>
+	    		<article>
+	    			<picture></picture>
+	    			<h4>à la découverte du tatouage marin</h4>
+	    			<p>12 <img src="" alt=""></p>
+	    			<p>14 octobre 2015</p>
+	    		</article>
+	    		<article>
+	    			<picture></picture>
+	    			<h4>sea sheperd: la conservation marine en actions</h4>
+	    			<p>12 <img src="" alt=""></p>
+	    			<p>6 octobre 2015</p>
+	    		</article>
 	    	</section>
 	    </main>
 	    <footer>
 	    	<section>
-	    		<article><p></p></article>
-	    		<article><p></p></article>
-	    		<article><p></p></article>
-	    		<article><p></p></article>
+	    		<article>
+	    			<h4>le musée est ouvert tous les jours sauf lundi et jours fériés, de 9h30 à 18h.</h4>
+	    			<a href="#">
+	    				plus d'informations sur les horaires d'ouverture
+	    			</a>
+	    		</article>
+	    		<article>
+	    			<h4>retrouvez-nous sur les réseaux sociaux</h4>
+	    			<img src="" alt="">
+	    			<img src="" alt="">
+	    		</article>
+	    		<article>
+	    			<h4>On parle de nous!</h4>
+	    			<img src="" alt="">
+	    			<img src="" alt="">
+	    			<img src="" alt="">
+	    		</article>
+	    		<article>
+	    			<h4>professionnels</h4>
+	    			<ul>
+	    				<li><a href="#">espace presse</a></li>
+	    				<li><a href="#">soutenez le musée</a></li>
+	    				<li><a href="#">partenaires et sponsors</a></li>
+	    				<li><a href="#">privatisation</a></li>
+	    			</ul>
+	    		</article>
 	    	</section>
 	    	<section>
 	    		<p></p>
