@@ -11,3 +11,10 @@ Bleu : #1fbed6
 Gris sombre : #575757
 Gris clair : #787878 
 */
+
+
+
+body{
+    width: 1100px;
+    margin: 0 auto;
+}
