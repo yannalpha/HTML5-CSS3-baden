@@ -2,7 +2,7 @@
 /* https://www.creativejuiz.fr/blog/tutoriels/css3-creer-slideshow-automatique-controlable-transition */
 
 
-.slideshow {
+#slideshow {
 	position: relative;
 	width: 1024px;
 	height: 400px;
@@ -16,8 +16,8 @@
  * tutorial @
  * https://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
 */
-.slideshow:before,
-.slideshow:after {
+#slideshow:before,
+#slideshow:after {
 	position: absolute;
 	bottom:16px;
 	z-index: -10;
@@ -26,11 +26,11 @@
 	content: " ";
 	background: rgba(0,0,0,0.1);
 }
-.slideshow:before {
+#slideshow:before {
 	left:0;
 	transform: rotate(-4deg);
 }
-.slideshow:after {
+#slideshow:after {
 	right:0;
 	transform: rotate(4deg);
 }
@@ -41,7 +41,7 @@
 
 
 /* gestion des dimensions et débordement du conteneur */
-.slideshow .container {
+#slideshow .container {
 	position:relative;
 	width: 1024px;
 	height: 400px;
@@ -49,7 +49,7 @@
 }
 	
 /* on prévoit un petit espace gris pour la timeline */
-.slideshow .container:after {
+#slideshow .container:after {
 	position:absolute;
 	bottom: 0; left:0;
 	content: " ";
@@ -61,7 +61,7 @@
    le conteneur des slides
    en largeur il fait 100% x le nombre de slides
 */
-.slideshow .slider {
+#slideshow .slider {
 	position: absolute;
 	left:0; top:0;
 	width: 400%;
@@ -70,7 +70,7 @@
 }
 
 /* annulation des marges sur figure */
-.slideshow figure {
+#slideshow figure {
 	position:relative;
 	display:inline-block;
 	padding:0; margin:0;
@@ -80,7 +80,7 @@
 
 
 /* styles de nos légendes */
-.slideshow figcaption {
+#slideshow figcaption {
 	position:absolute;
 	left:0; right:0; bottom: 5px;
 	padding: 20px;
@@ -159,7 +159,7 @@
  
 /* apparition du bouton pause au survol */
 /* apparition des boutons au focus */
-.slideshow:hover .pause,
+#slideshow:hover .pause,
 .play_commands:focus {
 	opacity: 1;
 	outline: none;
@@ -167,27 +167,27 @@
 
 
 /* stopper les animation */
-.sl_command:target ~ .slideshow .slider,
-.sl_command:target ~ .slideshow figcaption,
-.sl_command:target ~ .slideshow #timeline,
-.sl_command:target ~ .slideshow .dots_commands li:first-child a:after {
+.sl_command:target ~ #slideshow .slider,
+.sl_command:target ~ #slideshow figcaption,
+.sl_command:target ~ #slideshow #timeline,
+.sl_command:target ~ #slideshow .dots_commands li:first-child a:after {
 	animation-play-state: paused;
 }
  
 /* redémarrer les animations */
-#sl_play:target ~ .slideshow .slider,
-#sl_play:target ~ .slideshow figcaption,
-#sl_play:target ~ .slideshow #timeline,
-#sl_play:target ~ .slideshow .dots_commands li:first-child a:after {
+#sl_play:target ~ #slideshow .slider,
+#sl_play:target ~ #slideshow figcaption,
+#sl_play:target ~ #slideshow #timeline,
+#sl_play:target ~ #slideshow .dots_commands li:first-child a:after {
 	animation-play-state: running;
 }
  
 /* switch entre les boutons */
-.sl_command:target ~ .slideshow .pause 		{ opacity:0; }
-#sl_play:target ~ .slideshow:hover .pause,
-#sl_play:target ~ .slideshow .pause:focus 	{ opacity:1; }
-.sl_command:target ~ .slideshow .play 		{ opacity:1; right: 25px; cursor: pointer; }
-#sl_play:target ~ .slideshow .play 			{ opacity:0; right: 55px; cursor: default; }
+.sl_command:target ~ #slideshow .pause 		{ opacity:0; }
+#sl_play:target ~ #slideshow:hover .pause,
+#sl_play:target ~ #slideshow .pause:focus 	{ opacity:1; }
+.sl_command:target ~ #slideshow .play 		{ opacity:1; right: 25px; cursor: pointer; }
+#sl_play:target ~ #slideshow .play 			{ opacity:0; right: 55px; cursor: default; }
 
 
 
@@ -195,7 +195,7 @@
 
 /* pause et lecture */
 
-.slideshow .commands {
+#slideshow .commands {
 	position: absolute;
 	top: 45%;
 	padding: 5px 13px;
@@ -210,17 +210,17 @@
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
  
-.slideshow .prev { left: -48px; }
-.slideshow .next { right: -48px; }
+#slideshow .prev { left: -48px; }
+#slideshow .next { right: -48px; }
  
-.slideshow .commands { display:none; }
-.slideshow .commands1 {	display: block; }
+#slideshow .commands { display:none; }
+#slideshow .commands1 {	display: block; }
 
 
 
 
 
-.slideshow .c_slider {
+#slideshow .c_slider {
 	position: absolute;
 	left:0; top:0;
 	width: 400%;
@@ -228,7 +228,7 @@
 	/* multiple background */
 	background: url(../img/ile.jpg) 0 0 no-repeat,
 	            url(../img/poisson.jpg) 1024px 0 no-repeat,
-	            url(../img/tiger.jpg) 2048px 0 no-repeat,
+	            url(../img/Tigre.jpg) 2048px 0 no-repeat,
 	            url(../img/ville.jpg) 3072px 0 no-repeat;
 	transition: background 1s;
 }
@@ -236,39 +236,39 @@
 
 
 /* on cache le slider */
-.sl_i:target ~ .slideshow .slider									{ visibility: hidden }
+.sl_i:target ~ #slideshow .slider									{ visibility: hidden }
 /* on planque la 1ère pastille (cf. bonux suivant) */
-.sl_i:target ~ .slideshow .dots_commands li:first-child a:after		{ display:none; }
+.sl_i:target ~ #slideshow .dots_commands li:first-child a:after		{ display:none; }
 /* pour afficher la 2ème pastille (cf. bonux suivant) */
-.sl_i:target ~ .slideshow .dots_commands li:first-child a:before	{ display:block; }
+.sl_i:target ~ #slideshow .dots_commands li:first-child a:before	{ display:block; }
  
 /* lorsque on cible le premier slider */
 /* on cache tous les "précédent" et "suivant" */
-#sl_i1:target ~ .slideshow .commands								{ display: none; }
+#sl_i1:target ~ #slideshow .commands								{ display: none; }
 /* on affiche seulement deux flèches */
-#sl_i1:target ~ .slideshow .commands1								{ display: block; }
+#sl_i1:target ~ #slideshow .commands1								{ display: block; }
 /* correspond au décalage des images */
-#sl_i1:target ~ .slideshow .c_slider								{ background-position: 0 0, 1024px 0, 2048px 0, 3072px 0; }
+#sl_i1:target ~ #slideshow .c_slider								{ background-position: 0 0, 1024px 0, 2048px 0, 3072px 0; }
 /* on place la pastille tout à gauche */
-#sl_i1:target ~ .slideshow .dots_commands li:first-child a:before	{ left:0; }
+#sl_i1:target ~ #slideshow .dots_commands li:first-child a:before	{ left:0; }
  
 /* même procédé lorsqu'on cible le second slide */
-#sl_i2:target ~ .slideshow .commands								{ display: none; }
-#sl_i2:target ~ .slideshow .commands2								{ display: block; }
-#sl_i2:target ~ .slideshow .c_slider								{ background-position: -1024px 0, 0 0, 1024px 0, 2048px 0; }
-#sl_i2:target ~ .slideshow .dots_commands li:first-child a:before	{ left:18px; }
+#sl_i2:target ~ #slideshow .commands								{ display: none; }
+#sl_i2:target ~ #slideshow .commands2								{ display: block; }
+#sl_i2:target ~ #slideshow .c_slider								{ background-position: -1024px 0, 0 0, 1024px 0, 2048px 0; }
+#sl_i2:target ~ #slideshow .dots_commands li:first-child a:before	{ left:18px; }
  
 /* puis le 3ème */
-#sl_i3:target ~ .slideshow .commands								{ display: none; }
-#sl_i3:target ~ .slideshow .commands3								{ display: block; }
-#sl_i3:target ~ .slideshow .c_slider								{ background-position: -2048px 0, -1024px 0, 0 0, 1024px 0; }
-#sl_i3:target ~ .slideshow .dots_commands li:first-child a:before	{ left:36px; }
+#sl_i3:target ~ #slideshow .commands								{ display: none; }
+#sl_i3:target ~ #slideshow .commands3								{ display: block; }
+#sl_i3:target ~ #slideshow .c_slider								{ background-position: -2048px 0, -1024px 0, 0 0, 1024px 0; }
+#sl_i3:target ~ #slideshow .dots_commands li:first-child a:before	{ left:36px; }
  
 /* et enfin le 4ème */
-#sl_i4:target ~ .slideshow .commands								{ display: none; }
-#sl_i4:target ~ .slideshow .commands4								{ display: block; }
-#sl_i4:target ~ .slideshow .c_slider								{ background-position: -3072px 0, -2048px 0, -1024px 0, 0 0; }
-#sl_i4:target ~ .slideshow .dots_commands li:first-child a:before	{ left:54px; }
+#sl_i4:target ~ #slideshow .commands								{ display: none; }
+#sl_i4:target ~ #slideshow .commands4								{ display: block; }
+#sl_i4:target ~ #slideshow .c_slider								{ background-position: -3072px 0, -2048px 0, -1024px 0, 0 0; }
+#sl_i4:target ~ #slideshow .dots_commands li:first-child a:before	{ left:54px; }
 
 
 
