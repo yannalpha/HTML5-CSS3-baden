@@ -226,10 +226,10 @@
 	width: 400%;
 	height: 400px;
 	/* multiple background */
-	background: url(../img/ile.jpg) 0 0 no-repeat,
-	            url(../img/poisson.jpg) 1024px 0 no-repeat,
-	            url(../img/Tigre.jpg) 2048px 0 no-repeat,
-	            url(../img/ville.jpg) 3072px 0 no-repeat;
+	background: url(../img/slider/ile.jpg) 0 0 no-repeat,
+	            url(../img/slider/poisson.jpg) 1024px 0 no-repeat,
+	            url(../img/slider/Tigre.jpg) 2048px 0 no-repeat,
+	            url(../img/slider/ville.jpg) 3072px 0 no-repeat;
 	transition: background 1s;
 }
 

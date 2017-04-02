@@ -14,7 +14,214 @@ Gris clair : #787878
 
 
 
+
+
+
+/************************************************/
+/******************* General ********************/
+/************************************************/
 body{
-    width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+li{
+    list-style-type: none;
+}
+/**** main ***/
+
+main{
+    margin: 0 auto;
+    
+    
+    width: 90%;
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.section_info .fa-map, .section_info .fa-calendar, .section_info .fa-ticket, footer .fa-twitter, footer .fa-facebook{
+    color: #1fbed6;
+    background-color: white;
+    border-radius: 50px;
+    display: flex!important; 
+    align-items: center;
+    justify-content: center; 
+}
+
+
+/************************************************/
+/******************* Main ***********************/
+/************************************************/
+
+/**** section intro ****/
+
+.section_intro{
+    margin: 0 auto;
+    text-align: center;
+    
+    width: 80%;
+}
+h1{
+    color: #1fbed6;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    
+    max-width: 560px;
+    width: 80%;
+}
+
+/**** section info ****/
+
+.section_info .fa-map, .section_info .fa-calendar, .section_info .fa-ticket{
+    width: 85px;
+    height: 85px;
+}
+
+
+
+
+.section_info{
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    
+    width: 95%;
+    
+}
+.section_info article{
+    padding-top: 15px;
+    background-color: #1fbed6;
+    color: white;
+    flex: 1;
+/*    max-width: 300px;*/
+    min-width: 200px;
+    margin: 0 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_info article h3{
+    margin: 10px 0 5px;
+}
+.section_info article p{
+    text-align: center;
+    margin-top: 0;
+    padding: 0 10px;
+}
+/**** section actus ****/
+
+.section_actu article{
+    flex: 1;
+    min-width: 180px;
+    margin: 0 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section_actu{
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.section_actu figure{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.section_actu figure img{
+    width: 100%;
+}
+h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.section_actu figcaption{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section_actu figcaption h4{
+    flex: 4;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+.message{
+    flex: 1;
+    text-align: right;
+    margin: 10px 0;
+
+}
+.message span{
+    color: #787878;
+}
+.date{
+    width: 100%;
+    margin: 0;
+}
+
+
+
+/************************************************/
+/******************* Footer *********************/
+/************************************************/
+
+footer{
+    margin-top: 50px;
+}
+footer, footer a{
+    background-color: #1fbed6;
+    color: white;
+}
+footer section{
+    width: 90%;
+    margin: 0 auto;
+}
+footer article{
+    flex: 1;
+    min-width: 180px;
+    margin: 0 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+footer h4{
+    margin: 0;
+    width: 100%;
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+footer .fa-twitter, footer .fa-facebook{
+    width: 20px;
+    height: 20px;
+}
+.reseaux{
+    display: flex;
+    width: 45px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+footer img{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+footer .legales{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+footer .legales p{
+    margin: 0 0 10px;
 }

@@ -364,7 +364,7 @@
 }
 .fa-photo:before,
 .fa-image:before,
-.fa-picture-o:before {
+.fa-figure-o:before {
   content: "\f03e";
 }
 .fa-pencil:before {
@@ -1470,7 +1470,7 @@
   content: "\f1c4";
 }
 .fa-file-photo-o:before,
-.fa-file-picture-o:before,
+.fa-file-figure-o:before,
 .fa-file-image-o:before {
   content: "\f1c5";
 }
