@@ -17,28 +17,49 @@
 	</head>
 	<body>
 	    <header>
-			<img src="assets/img/logo.jpg" alt="icon">
-	    	<nav>
-	    		<ul class="menu_main">
-	    			<li class="li_parent_menu_second">
+	        <div class="logo">
+                <img src="assets/img/logo.jpg" alt="logo">
+                <div>
+                    <h1>Musée Océanographique</h1>
+                    <h2>de baden-baden</h2>    
+                </div>
+	        </div>
+            <span class="language">
+               <a href="#"><img src="assets/img/fran%C3%A7ais.png" alt="français"></a>
+               <a href="#"><img src="assets/img/germany.png" alt="Deutch"></a>
+                
+                
+            </span>
+	    	<nav class="main-nav">
+                <input type="checkbox" class="menu-toggler" id="menu-toggler" aria-hidden="true">
+                <label for="menu-toggler" class="menu-toggler__label" aria-hidden="true">
+                    <span class="menu-toggler__label__text">Menu</span>
+                    <span class="menu-toggler__label__visual">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </label>
+	    		<ul class="main-menu">
+	    			<li class="li-second-menu">
 	    				<a href="#">le musée</a>
-	    				<ul class="menu_second">
+	    				<ul class="second-menu">
 	    					<li><a href="#">infos</a></li>
 	    					<li><a href="#">histoire</a></li>
 	    					<li><a href="#">etc</a></li>
 	    				</ul>
 	    			</li>
-	    			<li class="li_parent_menu_second">
+	    			<li class="li-second-menu">
 	    				<a href="#">aquariums</a>
-	    				<ul class="menu_second">
+	    				<ul class="second-menu">
 	    					<li><a href="#">description</a></li>
 	    					<li><a href="#">especes</a></li>
 	    					<li><a href="#">etc</a></li>
 	    				</ul>
 	    			</li>
-	    			<li class="li_parent_menu_second">
+	    			<li class="li-second-menu">
 	    				<a href="#">animations</a>
-	    				<ul class="menu_second">
+	    				<ul class="second-menu">
 	    					<li><a href="#">piscine</a></li>
 	    					<li><a href="#">nager avec requins</a></li>
 	    					<li><a href="#">etc</a></li>
@@ -47,9 +68,9 @@
 	    			<li>
 	    				<a href="#">actualités</a>
 	    			</li>
-	    			<li class="li_parent_menu_second">
+	    			<li class="li-second-menu">
 	    				<a href="#">préparez votre visite</a>
-	    				<ul class="menu_second">
+	    				<ul class="second-menu">
 	    					<li><a href="#">accès</a></li>
 	    					<li><a href="#">horaires</a></li>
 	    					<li><a href="#">tarifs</a></li>
@@ -92,17 +113,17 @@
 						</figure>
 
 						<figure>
-							<img src="assets/img/slider/poisson.jpg" alt="ceci est un poisson" width="1024" height="400" />
+							<img src="assets/img/slider/poisson.jpg" alt="ceci est un poisson" width="auto" height="400" />
 							<figcaption>Let's cross that bridge when we come to it</figcaption>
 						</figure>
 
 						<figure>
-							<img src="assets/img/slider/Tigre.jpg" alt="magnifique tigre" width="1024" height="400" />
+							<img src="assets/img/slider/Tigre.jpg" alt="magnifique tigre" width="auto" height="400" />
 							<figcaption>Sushi<em>(do)</em> time</figcaption>
 						</figure>
 
 						<figure>
-							<img src="assets/img/slider/ville.jpg" alt="tres jolie ville" width="1024" height="400" />
+							<img src="assets/img/slider/ville.jpg" alt="tres jolie ville" width="auto" height="400" />
 							<figcaption>Waking Life</figcaption>
 						</figure>
 					</div>
@@ -118,7 +139,7 @@
 			</section>
 
 	    	<section class="section_intro">
-	    		<h1>Bienvenue au Musée Océanographique de Baden-Baden</h1>
+	    		<h2>Bienvenue au Musée Océanographique de Baden-Baden</h2>
 	    		<article>
 	    			<p>
 	    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie risus at tincidunt malesuada. Suspendisse eu erat cursus,
